@@ -11,7 +11,7 @@ import { HousingService } from '../../services/housing.service';
   templateUrl: './homeList.component.html',
   styleUrl: './homeList.component.scss'
 })
-export class HomeComponent {
+export class HomeListComponent {
   houseList: House[] = [];
   housingService: HousingService = inject(HousingService);
 
