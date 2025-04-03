@@ -1,8 +1,8 @@
 import { Component, inject } from '@angular/core';
 import {CommonModule} from '@angular/common';
 import { HouseCardComponent } from '../house-card/house-card.component';
-import { House } from '../house';
-import { HousingService } from '../housing.service';
+import { House } from '../../models/house';
+import { HousingService } from '../../services/housing.service';
 
 
 @Component({

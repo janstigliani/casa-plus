@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
-import { House } from '../house';
+import { House } from '../../models/house';
 
 @Component({
   selector: 'app-house-card',
