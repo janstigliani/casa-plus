@@ -23,8 +23,10 @@ export class DetailsComponent {
   });
 
   constructor() {    
-    const houseId = Number(this.route.snapshot.params['id']);    
-    this.house = this.housingService.getHousingLocationById(houseId);  
+    const houseId = Number(this.route.snapshot.params['id']);     
+    this.housingService.getHousingLocationById(houseId).then( (house) => {
+      this.house = house;
+    })
   }
 
   submitApplication() {
